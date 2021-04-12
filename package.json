@@ -1,0 +1,39 @@
+{
+  "name": "medicines.zp.ua",
+  "version": "1.0.0",
+  "description": "hospitals",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run pi && npm run web:build && cross-env NODE_ENV=production node app.js",
+    "pi": "npm run client:install && npm i",
+    "client:install": "cd client && npm i",
+    "web:build": "cd client && npm run build",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cross-env NODE_ENV=development nodemon app.js",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "keywords": [
+    "nodeJs",
+    "vue",
+    "webpack"
+  ],
+  "author": "Evgenii Burkovskii <1happyrock1@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "sequelize": "^6.5.0",
+    "uuid": "^8.3.2"
+  }
+}

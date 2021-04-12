@@ -1,0 +1,124 @@
+@import "fonts";
+@import "theme";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: #DCDCDC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BFBFBF;
+  border-radius: 3px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.s-b {
+  justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.b-l {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bg-def {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div {
+    font-family: 'AvenirNextCyr Regular';
+    color: black;
+}
+
+.title {
+  font-family: "AvenirNextCyr Bold";
+  font-size: 28px;
+  text-align: center;
+}
+
+.check-mark {
+  background-image: url('../assets/imgs/icons/prices/checkMark.svg');
+  -webkit-background-size: 21px 14px;
+  background-size: 21px 14px;
+}
+
+.arrow {
+  background-image: url('../assets/imgs/icons/adminPanel/arrow.svg');
+  -webkit-background-size: 21px 21px;
+  background-size: 21px 21px;
+}
+
+.arrow-white {
+  background-image: url('../assets/imgs/icons/home/arrow-white.svg');
+  -webkit-background-size: 21px 21px;
+  background-size: 21px 21px;
+}
+
+.arrow-white_r {
+  transform: rotate(180deg);
+}
+
+.magnifying-glass {
+  background-image: url('../assets/imgs/icons/home/magnifying-glass.svg');
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+}
+
+.trash {
+  background-image: url('../assets/imgs/icons/adminPanel/trash.svg');
+  -webkit-background-size: 29px 31px;
+  background-size: 29px 31px;
+}
+
+.download {
+  background-image: url('../assets/imgs/icons/adminPanel/download.svg');
+  -webkit-background-size: 36px 36px;
+  background-size: 36px 36px;
+}
+
+.addFolder {
+  background-image: url('../assets/imgs/icons/adminPanel/addFolder.svg');
+  -webkit-background-size: 31px 26px;
+  background-size: 31px 26px;
+}
+
+.logout {
+  background-image: url('../assets/imgs/icons/header/logout.svg');
+  -webkit-background-size: 30px 30px;
+  background-size: 30px 30px;
+}
+
